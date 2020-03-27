@@ -110,7 +110,7 @@ bot.onText(/(.+)$/, function (msg, match) {
             if (targetTime<0 || targetTime>24)
                 formattedAnswer = "Enter the name or write 'Hi'.\n\n";
             else 
-                formattedAnswer = "Can't find events for the given time ( " + targetTime+ " ч)";
+                formattedAnswer = "Can't find the person for the given name ( " + targetTime+ " ч)";
                 
             // output current answer
             if (currentAnswer != '')
