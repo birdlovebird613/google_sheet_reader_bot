@@ -84,7 +84,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                 {
                     // add the line break if not the first answer
                     if (itemsFound==0) 
-                        formattedAnswer += "At " + targetTime + " these talks will take place:\n\n";
+                        formattedAnswer += "The person that you would like to check is " keywords + ". Here is his/her posting order for your information, please.:\n\n";
                     else 
                         formattedAnswer += "\n\n";
                         
@@ -108,7 +108,7 @@ bot.onText(/(.+)$/, function (msg, match) {
         if (itemsFound == 0)
         {
             if (targetTime<0 || targetTime>24)
-                formattedAnswer = "Enter the time to show talks or write 'Hi'.\n\n";
+                formattedAnswer = "Enter the name or write 'Hi'.\n\n";
             else 
                 formattedAnswer = "Can't find events for the given time ( " + targetTime+ " ч)";
                 
